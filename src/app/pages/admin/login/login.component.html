@@ -1,0 +1,19 @@
+<header class="showcase">
+  <div class="showcase-content">
+    <div class="showcase-top">
+      <h1>LOGIN</h1>
+    </div>
+    <div class="formm">
+      <form>
+        <h2>Welcome user!</h2>
+        <div class="info">
+          <input class="email" type="text" name="userName" [(ngModel)]="loginObj.userName" placeholder="Username" id="email"> <br>
+          <input class="email" type="password" name="password" [(ngModel)]="loginObj.password" placeholder="Password" id="password">
+        </div>
+        <div class="btn">
+          <button class="btn-primary" type="button" (click)="onLogin()">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</header>

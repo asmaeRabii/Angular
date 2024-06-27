@@ -1,0 +1,8 @@
+
+{
+  import { initializeApp } from 'firebase/app';
+import { environment } from './environments/environment'; // Assure-toi d'avoir une configuration d'environnement pour Firebase
+
+export const firebaseApp = initializeApp(environment.firebaseConfig);
+
+}

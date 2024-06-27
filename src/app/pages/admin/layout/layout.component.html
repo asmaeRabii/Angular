@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/image.png" alt="Logo" style="height: 40px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <button routerLink="/products">Products</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-link nav-link" routerLink="/categories">Categories</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-link nav-link" routerLink="/customers">Customers</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-link nav-link" routerLink="/orders">Orders</button>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
